@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey City Studios</title>
+    <link rel="preload" href="CSS/normalyze.css" as="Style">
+    <link rel="stylesheet" href="CSS/normalyze.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="CSS/Styles.css" as="Style">
+    <link rel="stylesheet" href="CSS/Styles.css">
 </head>
+
 <body>
     <header>
-        <h1>MONKEY CITY STUDIOS</h1>
+        <h1 class="titulo">MONKEY CITY STUDIOS <span>Graphic Design & Web Development</span></h1>
     </header>
     
-    <nav>
+    <nav class="navegacion-principal contenedor">
         <a href="#">Inicio</a>
         <a href="Nosotros.html">Nosotros</a>
         <a href="#">Clientes</a>
@@ -56,19 +63,29 @@
         <h2>Contácto</h2>
 
         <form>
-            ><fieldset>
-                <legend>Por favor llena todos los campos</legend>
-                <label>Nombre</label>
-                <input type="text" placeholder="Nombre">
+            <fieldset>
+                <div>
+                    <legend>Por favor llena todos los campos</legend>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Teléfono"> 
+                </div>
 
-                <label>Teléfono</label>
-                <input type="tel" placeholder="Teléfono"> 
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="e-mail">
+                </div>
+                
+                <div>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escríbenos"></textarea>
+                </div>
 
-                <label>Correo</label>
-                <input type="email" placeholder"e-mail">
-
-                <label>Mensaje</label>
-                <textarea></textarea>
+                <input type="submit" value="Enviar">
             </fieldset>
         </form>
     </section>
